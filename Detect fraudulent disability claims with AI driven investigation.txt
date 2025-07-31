@@ -1,0 +1,81 @@
+
+
+원문
+This demo will showcase how UiPath agents can help detect fraud in Social Security disability claims.
+
+번역
+이번 데모에서는 UiPath 에이전트가 사회보장 장애 급여 청구에서 사기 행위를 탐지하는 데 어떻게 도움을 줄 수 있는지 보여드리겠습니다.
+
+---
+
+원문
+We start with two application documents submitted by a fictitious citizen John Smith.
+
+번역
+시작은 가상의 시민 John Smith가 제출한 두 개의 신청서 문서에서 출발합니다.
+
+---
+
+원문
+An automation is launched to download and scan the documents, then send the information to an agent.
+
+번역
+자동화가 실행되어 문서를 다운로드하고 스캔한 뒤, 해당 정보를 에이전트에 전달합니다.
+
+---
+
+원문
+Fraud detection is a complex, ambiguous process, but the advanced cognitive skills of agents can recognize patterns and anomalies hidden in the data.
+
+번역
+사기 탐지는 복잡하고 모호한 과정이지만, 에이전트의 고도화된 인지 능력을 통해 데이터에 숨어 있는 패턴과 이상 징후를 식별할 수 있습니다.
+
+---
+
+원문
+This is important because every year thousands of fraudulent claims are submitted, costing the SSA millions of dollars.
+
+번역
+이는 매우 중요한데, 매년 수천 건의 허위 청구가 제출되어 사회보장국(SSA)에 수백만 달러의 손실을 초래하기 때문입니다.
+
+---
+
+원문
+Our agent is instructed on how to proceed when it receives the application information.
+
+번역
+에이전트는 신청서 정보를 받았을 때 어떻게 진행해야 하는지에 대해 지침을 부여받습니다.
+
+---
+
+원문
+Most importantly, it has been told to reference the standard operating procedure stored within our context grinding index.
+
+번역
+특히, 컨텍스트 그라인딩 인덱스에 저장된 표준 운영 절차(SOP)를 반드시 참조하도록 설정되어 있습니다.
+
+---
+
+원문
+The agent is also equipped to cross reference a database of citizens to check for any discrepancies.
+
+번역
+또한 에이전트는 시민 데이터베이스와 교차 검증하여 불일치 사항을 확인할 수 있는 기능도 갖추고 있습니다.
+
+---
+
+원문
+After its review, the agent escalates its findings to a human user who can validate the agents findings against the submitted documents.
+
+번역
+검토를 마친 후, 에이전트는 자신이 발견한 내용을 사람이 확인할 수 있도록 전달해 제출된 문서와 대조하게 합니다.
+
+---
+
+원문
+Having human in the loop input will then allow the agent to decide whether to initiate further automation to formally report the fraudulent activity.
+
+번역
+이렇게 사람의 검증이 반영되면, 에이전트는 추가 자동화를 실행해 해당 사기 행위를 공식적으로 보고할지 여부를 결정할 수 있습니다.
+
+---
