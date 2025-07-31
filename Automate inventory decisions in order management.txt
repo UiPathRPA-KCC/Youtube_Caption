@@ -1,0 +1,80 @@
+
+원문
+In this demonstration, we will showcase how an AI agent working alongside robots can automate an order management process.
+
+번역
+이번 데모에서는 AI 에이전트가 로봇과 협력해 주문 관리 프로세스를 자동화하는 방법을 보여드리겠습니다.
+
+---
+
+원문
+The automation begins with a robot retrieving an email, downloading the attached file, and extracting the order details.
+
+번역
+자동화는 로봇이 이메일을 확인하고 첨부 파일을 다운로드한 뒤 주문 세부 정보를 추출하는 단계에서 시작됩니다.
+
+---
+
+원문
+As we wait for the next process to trigger, I want to draw your attention to the left side of the screen where you can see how by using natural language, you could prompt or instruct an agent to complete a process by leveraging tools, context, and escalation paths.
+
+번역
+다음 프로세스가 실행되기를 기다리는 동안, 화면 왼쪽을 보시면 자연어를 통해 에이전트에 지시를 내리고, 다양한 도구와 문맥 정보, 그리고 에스컬레이션 경로를 활용해 프로세스를 수행하도록 요청할 수 있는 모습을 확인하실 수 있습니다.
+
+---
+
+원문
+Next, a robot logs into the Acme application to retrieve the current inventory levels.
+
+번역
+다음 단계에서는 로봇이 Acme 애플리케이션에 로그인하여 현재 재고 수준을 가져옵니다.
+
+---
+
+원문
+Using this data, the agent applies predefined business rules stored as an index document to make intelligent data-driven decisions about reorder quantities.
+
+번역
+이 데이터를 기반으로, 에이전트는 색인 문서에 저장된 사전 정의된 비즈니스 규칙을 적용해 재주문 수량에 대한 데이터 기반의 지능적인 결정을 내립니다.
+
+---
+
+원문
+Once the agent determines the reorder quantities, the final step will be to send a Slack message to the contract team.
+
+번역
+에이전트가 재주문 수량을 결정하면, 마지막 단계로 계약 팀에 Slack 메시지를 보냅니다.
+
+---
+
+원문
+This message will include key details such as the item and order quantity specified in the contract, the updated inventory levels, the calculated reorder quantity, and the business logic or guidance behind the decision.
+
+번역
+이 메시지에는 계약서에 명시된 품목과 주문 수량, 최신 재고 수준, 계산된 재주문 수량, 그리고 해당 결정의 근거가 된 비즈니스 로직이나 가이드라인이 포함됩니다.
+
+---
+
+원문
+For instance, the item PP sauce mix can only be reordered at batches of 50.
+
+번역
+예를 들어, PP 소스 믹스 품목은 50개 단위로만 재주문이 가능합니다.
+
+---
+
+원문
+Additionally, the item MAG kit is marked as obsolete, meaning no further orders can be placed for it.
+
+번역
+또한 MAG 키트 품목은 단종 처리되어 더 이상 주문할 수 없습니다.
+
+---
+
+원문
+Thank you for watching this demonstration.
+
+번역
+이번 데모를 시청해 주셔서 감사합니다.
+
+---
