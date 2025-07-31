@@ -1,0 +1,295 @@
+원문
+Hello everyone. Today I will be demonstrating how an agent works and how it was built using UiPath agent build.
+
+번역
+안녕하세요. 오늘은 UiPath 에이전트 빌더를 사용해 만들어진 에이전트가 어떻게 동작하는지, 그리고 어떤 방식으로 구축됐는지를 시연해 드리겠습니다.
+
+---
+
+원문
+The agent we'll be focusing on it's called the onboard employee agent.
+
+번역
+오늘 집중해서 살펴볼 에이전트는 **신규 직원 온보딩 에이전트**입니다.
+
+---
+
+원문
+I'll walk you through the system prompt, the user prompt, the tools used, and finally we'll see the agent in action.
+
+번역
+시스템 프롬프트와 사용자 프롬프트, 사용된 도구들을 차례로 살펴본 뒤, 실제로 에이전트가 어떻게 작동하는지도 함께 보겠습니다.
+
+---
+
+원문
+So let's get started. First let's take a look at the system prompt.
+
+번역
+그럼 시작해 보겠습니다. 먼저 시스템 프롬프트부터 살펴보겠습니다.
+
+---
+
+원문
+This is where we define the agent's behavior and provide clear instruction to the agent.
+
+번역
+이곳은 에이전트의 동작 방식을 정의하고, 수행해야 할 지침을 명확히 전달하는 부분입니다.
+
+---
+
+원문
+Here we specify the steps and that need to be performed when onboarding an employee.
+
+번역
+여기에서 신규 직원을 온보딩할 때 필요한 단계들을 구체적으로 지정합니다.
+
+---
+
+원문
+The agents follows these predefined instructions to ensure a smooth execution.
+
+번역
+에이전트는 이렇게 미리 정의된 지침을 따라 원활하게 작업을 수행합니다.
+
+---
+
+원문
+So we have steps defined here such as analyze the input data using a pre-existing data when possible, create a pre the profile in our day and so on so forth.
+
+번역
+예를 들어, 가능한 경우 기존 데이터를 활용해 입력값을 분석하거나, Workday에 신규 직원 프로필을 생성하는 등의 단계가 정의돼 있습니다.
+
+---
+
+원문
+Now let's explore the user prompt.
+
+번역
+다음은 사용자 프롬프트를 살펴보겠습니다.
+
+---
+
+원문
+The user prompt is where we demonstrate how the agent was created and how it looks within agent builder.
+
+번역
+사용자 프롬프트에서는 에이전트가 어떻게 만들어졌는지, 그리고 에이전트 빌더 안에서 어떻게 보이는지를 확인할 수 있습니다.
+
+---
+
+원문
+So we'll go through the user input structure and show how it interacts with the system to process uh the onboarding workflow.
+
+번역
+사용자 입력 구조를 살펴보고, 그것이 시스템과 상호작용하여 온보딩 워크플로를 어떻게 처리하는지 보여드리겠습니다.
+
+---
+
+원문
+Now let's explore the tools used by the agent.
+
+번역
+이번에는 에이전트가 사용하는 도구들을 확인해 보겠습니다.
+
+---
+
+원문
+So these are essential components that enable the agent to interact with different systems and execute necessary actions.
+
+번역
+이 도구들은 에이전트가 다양한 시스템과 연결되고 필요한 작업을 실행할 수 있게 해 주는 핵심 요소입니다.
+
+---
+
+원문
+So the tools are triggered in the following order. We have to get employee details. So the tool is executed first to retrieve employee information from our day.
+
+번역
+도구는 다음과 같은 순서로 실행됩니다. 먼저 **직원 세부 정보 가져오기** 단계입니다. 이 도구는 Workday에서 직원 정보를 불러오기 위해 가장 먼저 실행됩니다.
+
+---
+
+원문
+If the employee is not found, we proceed to the next step. Create prehire employee in our day.
+
+번역
+직원이 조회되지 않으면, 다음 단계로 넘어가 Workday에 **신규 채용자 프로필 생성**을 진행합니다.
+
+---
+
+원문
+So if no existing employee record is found, this tool is triggered to create a a prehire profile in our day ensuring that the new employee is properly registered and we have a sent email for confirmation.
+
+번역
+즉, 기존 직원 기록이 없을 경우 이 도구가 실행되어 신규 직원이 올바르게 등록되도록 Workday에 사전 채용자 프로필을 생성하며, 이를 확인하기 위한 이메일도 함께 발송됩니다.
+
+---
+
+원문
+So once the prehire profile is successfully creating an email confirmation is sent to notify the relevant stakeholders.
+
+번역
+프로필이 성공적으로 생성되면 이해관계자에게 확인 이메일이 발송됩니다.
+
+---
+
+원문
+Each of the tools plays a crucial role in ensuring the onboarding process is seamless and automated.
+
+번역
+이러한 각 도구들은 온보딩 프로세스를 매끄럽고 자동화된 방식으로 보장하는 데 중요한 역할을 합니다.
+
+---
+
+원문
+So with the agent set up, let's see it in action.
+
+번역
+이제 에이전트가 설정됐으니 실제로 어떻게 작동하는지 보겠습니다.
+
+---
+
+원문
+We'll run the agent using details extracted from the email body we received.
+
+번역
+먼저 받은 이메일 본문에서 추출한 세부 정보를 활용해 에이전트를 실행하겠습니다.
+
+---
+
+원문
+This will trigger the process and allow us to observe how jobs are executed in the orchestrator.
+
+번역
+이 과정이 실행되면서 오케스트레이터에서 작업이 어떻게 처리되는지 확인할 수 있습니다.
+
+---
+
+원문
+So I'm going to press the run button and in the playground section I'll see that the execution started and the first job that will be triggering the orchestrator is the get employee details which is correct because this is the one that we want to see in action first of all right.
+
+번역
+실행 버튼을 누르면 플레이그라운드 섹션에서 실행이 시작된 것을 볼 수 있고, 오케스트레이터에서 가장 먼저 실행되는 작업은 직원 세부 정보 가져오기입니다. 이는 우리가 가장 먼저 확인하고자 했던 작업이므로 올바른 순서입니다.
+
+---
+
+원문
+If I'm going back through the jobs in the orchestrator I can see that it's in a running state now it runs with the parameters that we defined so it's going to check if this email press exist in exist in the workday system.
+
+번역
+오케스트레이터의 작업 목록으로 돌아가 보면, 현재 정의된 매개변수로 실행 중임을 확인할 수 있습니다. 이 단계에서는 해당 이메일 주소가 Workday 시스템에 존재하는지 확인합니다.
+
+---
+
+원문
+If not, it will return a message and will say that the employee was not found.
+
+번역
+만약 존재하지 않으면 직원이 발견되지 않았다는 메시지를 반환합니다.
+
+---
+
+원문
+What does it mean? It means that we need to call another tool that is going to create for us a profile in the workday.
+
+번역
+이는 곧 다른 도구를 호출해 Workday에 새 프로필을 생성해야 한다는 의미입니다.
+
+---
+
+원문
+Going back to the orchestrator job, I can see that also run it successfully.
+
+번역
+오케스트레이터 작업으로 돌아가 보면 이 단계 역시 성공적으로 실행된 것을 확인할 수 있습니다.
+
+---
+
+원문
+And if I'm going to the tool in the agent builder, I can see that the profile has been created successfully.
+
+번역
+또한 에이전트 빌더의 도구 화면에서 프로필이 성공적으로 생성된 것도 확인할 수 있습니다.
+
+---
+
+원문
+So please open your day and check if data is matched. Right, we have the email address, we have the first name, we have the last name.
+
+번역
+이제 Workday를 열어 데이터가 정확히 일치하는지 확인해 보겠습니다. 보시는 것처럼 이메일 주소, 이름, 성이 모두 정상적으로 등록되었습니다.
+
+---
+
+원문
+And now the send email tool is going to send us an email to confirm that everything was fine.
+
+번역
+이제 **이메일 발송 도구**가 실행되어 모든 것이 정상적으로 처리됐음을 알리는 확인 메일을 보냅니다.
+
+---
+
+원문
+And this is the email that has been sent to us that and to the stakeholder the persona that your onboarding profile for S. Johnson has been successfully created in our day.
+
+번역
+그리고 보시는 것이 발송된 이메일로, 이해관계자와 저에게 S. Johnson의 온보딩 프로필이 Workday에 성공적으로 생성되었음을 알려줍니다.
+
+---
+
+원문
+Here are the details and we have all the details that have been added in your work day right based on the in uh email that we received from the new employee.
+
+번역
+신규 직원의 이메일에서 받은 정보를 바탕으로 Workday에 등록된 세부 내용이 함께 포함되어 있습니다.
+
+---
+
+원문
+Also in the in execution we have an end sum or execution summary of the agent that is going to tell us that with uh retrieve the employee details from zone using this tool.
+
+번역
+또한 실행 결과에는 요약 리포트가 포함되어 있어, 어떤 도구를 사용해 직원 정보를 조회했는지 알려줍니다.
+
+---
+
+원문
+The result was that there is no employee found with these details. Then we create a new one and send a confirmation email.
+
+번역
+그 결과 해당 정보와 일치하는 직원이 없었고, 이후 새 프로필을 생성한 뒤 확인 이메일을 발송했다는 내용이 기록됩니다.
+
+---
+
+원문
+So this concludes our demonstration of the onboard employee agent.
+
+번역
+이것으로 신규 직원 온보딩 에이전트 시연을 마치겠습니다.
+
+---
+
+원문
+We've seen how it was built, how we interact with various tools and how it executes on boarding task efficiently.
+
+번역
+오늘은 이 에이전트가 어떻게 구축되었는지, 다양한 도구와 어떻게 상호작용하는지, 그리고 온보딩 업무를 얼마나 효율적으로 수행하는지 확인했습니다.
+
+---
+
+원문
+Thank you for watching and I hope this provides valuable insights into how APA agent builder can be leveraged for process automation.
+
+번역
+시청해 주셔서 감사합니다. 이번 시연이 UiPath 에이전트 빌더를 활용해 프로세스 자동화를 구현하는 방법에 대해 의미 있는 통찰을 드렸기를 바랍니다.
+
+---
+
+원문
+Thanks again and see you next time.
+
+번역
+다시 한 번 감사드리며, 다음에 또 뵙겠습니다.
+
+---
