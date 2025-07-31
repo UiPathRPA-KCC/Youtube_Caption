@@ -1,0 +1,145 @@
+---
+
+원문
+As it kicks off here, you'll notice that we're in UiPath's new agent builder.
+
+번역
+지금 시작하면서 보시면, 우리는 UiPath의 새롭게 선보인 **에이전트 빌더** 환경 안에 있습니다.
+
+---
+
+원문
+This no code experience allowed Peter to prompt a UiPath agent with instructions in natural language.
+
+번역
+이 노코드 환경 덕분에 피터는 단순히 자연어로 지시를 입력하는 것만으로 UiPath 에이전트를 실행할 수 있었습니다.
+
+---
+
+원문
+Like robots, agent agents act on behalf of their human counterparts.
+
+번역
+로봇처럼, 에이전트 역시 사람을 대신해 업무를 수행합니다.
+
+---
+
+원문
+Unlike robots, they can think critically about challenging goals, make decisions without relying on strict if then logic, and then take action by leveraging various tools that have been provided to them.
+
+번역
+하지만 로봇과 달리, 이들은 복잡한 목표에 대해 비판적으로 사고할 수 있고, 단순한 ‘if-then’ 규칙에만 의존하지 않고 스스로 결정을 내린 뒤, 제공된 다양한 도구를 활용해 실제 행동까지 이어갈 수 있습니다.
+
+---
+
+원문
+These tools can take the form of API based connections and activities powered by UiPath integration service.
+
+번역
+이 도구들은 UiPath 통합 서비스가 지원하는 API 기반 연결이나 액티비티 형태로 제공됩니다.
+
+---
+
+원문
+And as you would expect, it also take advantage of best-in-class UI and API based automations that UiPath has been helping customers to deliver for years.
+
+번역
+또한 예상하셨듯, UiPath가 수년간 고객에게 제공해온 최고 수준의 UI 및 API 기반 자동화 기능도 적극적으로 활용합니다.
+
+---
+
+원문
+If the agent gets stuck while working, it can quickly escalate it to a human for additional guidance.
+
+번역
+에이전트가 작업 도중 막히는 부분이 있으면, 바로 사람에게 연결해 추가 지침을 받을 수 있습니다.
+
+---
+
+원문
+Again, this can be provided in natural language and in a channel that feels familiar, like we're seeing here in Action Center.
+
+번역
+이때 역시 Action Center에서 보시는 것처럼, 익숙한 채널에서 자연어로 지침을 주고받을 수 있습니다.
+
+---
+
+원문
+This can also be done in something like Teams, Slack, or email.
+
+번역
+뿐만 아니라 Teams, Slack, 이메일 같은 협업 도구에서도 똑같이 진행할 수 있습니다.
+
+---
+
+원문
+Specialists can do a bit of their own research and then respond in natural language just as if a teammate had tapped them on the shoulder to ask a quick question.
+
+번역
+전문가는 필요한 정보를 직접 조금 찾아본 뒤, 마치 옆자리 동료가 가볍게 질문하는 것처럼 자연스럽게 답변할 수 있습니다.
+
+---
+
+원문
+They can also decide, as you're seeing in the bottom right, if they'd like the agent to remember the answer for this specific property, for example, in the future.
+
+번역
+또한, 화면 오른쪽 하단에서 보시는 것처럼, 앞으로 동일한 상황이 생길 경우를 대비해 이 답변을 에이전트가 기억하도록 설정할 수도 있습니다.
+
+---
+
+원문
+Once the specialist provides a response, we see the agent continue with its analysis, this time using context in the form of internal documentation or other similar materials that can be indexed and leveraged to assist agents as they reason through their task.
+
+번역
+전문가가 답변을 제공하면, 에이전트는 내부 문서나 색인화된 자료와 같은 맥락 정보를 활용해 작업을 분석하며 reasoning을 이어갑니다.
+
+---
+
+원문
+We now see it's creating notifications going out both to the applicant and the specialist.
+
+번역
+이제 신청자와 전문가 모두에게 알림이 전송되는 것을 볼 수 있습니다.
+
+---
+
+원문
+So we know that the agent has uh analyzed it and decided the application has passed these initial eligibility requirements.
+
+번역
+이를 통해 에이전트가 신청서를 분석하고, 초기 적격 요건을 충족했다고 판단했음을 알 수 있습니다.
+
+---
+
+원문
+This is confirmed in the response to the client where the agent has produced a nicely formatted email uh and included the full address that was not originally available in the applicant's email.
+
+번역
+클라이언트에게 보내는 응답에서, 에이전트는 보기 좋게 구성된 이메일을 작성해 원래 신청자의 메일에 없었던 전체 주소를 포함시켜 확실하게 전달합니다.
+
+---
+
+원문
+Clarified here so there's no confusion and even uh provided a an estimated property value so that the applicant understands some of the main criteria for their policy quote before ever having to meet with the specialist.
+
+번역
+혼동이 없도록 내용을 명확히 했을 뿐 아니라, 예상 부동산 가치까지 제공하여 신청자가 전문가를 만나기 전부터 정책 견적의 주요 기준을 미리 이해할 수 있도록 했습니다.
+
+---
+
+원문
+The specialist also gets a notification but with no need for formalities.
+
+번역
+전문가 역시 알림을 받지만, 불필요한 격식은 없습니다.
+
+---
+
+원문
+This makes it much faster and easier for them to take in the details and prioritize next steps.
+
+번역
+덕분에 필요한 내용을 훨씬 빠르고 쉽게 파악할 수 있고, 다음 단계를 효과적으로 우선순위에 따라 진행할 수 있습니다.
+
+---
