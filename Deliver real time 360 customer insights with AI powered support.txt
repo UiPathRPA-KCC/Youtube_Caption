@@ -1,0 +1,216 @@
+
+원문
+When performing customer support activities, it is often the case multiple screens of customer information are needed to be accessed.
+
+번역
+고객 지원 업무를 수행할 때는 여러 화면에서 고객 정보를 동시에 확인해야 하는 경우가 많습니다.
+
+---
+
+원문
+This can be stressful for the employee and a poor customer experience for the customer due to delays.
+
+번역
+이로 인해 직원은 피로감을 느끼게 되고, 고객 입장에서는 지연으로 인해 만족도가 떨어지는 경험을 하게 됩니다.
+
+---
+
+원문
+A single easy-to-read 360 view of the customer information is desirable.
+
+번역
+따라서 한눈에 보기 쉬운 **고객 정보 360 뷰**가 필요합니다.
+
+---
+
+원문
+We will use agent builder to create such a 360 view.
+
+번역
+이제 에이전트 빌더를 사용해 이러한 360 뷰를 만들어 보겠습니다.
+
+---
+
+원문
+This is agent builder. We've selected our model and given our project a name.
+
+번역
+지금 보시는 것이 에이전트 빌더입니다. 모델을 선택하고 프로젝트 이름을 지정했습니다.
+
+---
+
+원문
+We'll look at the arguments. These are the input arguments being provided by the telefan system, the customer service agent details, the customer query, the customer emotion, and a customer ID.
+
+번역
+이제 인수들을 살펴보겠습니다. 이는 텔레팬(Telefan) 시스템에서 제공하는 입력값으로, 고객 서비스 상담원 정보, 고객 문의 내용, 고객 감정 상태, 고객 ID가 포함됩니다.
+
+---
+
+원문
+Notice we've provided strong descriptions for each of these inputs.
+
+번역
+각 입력값마다 명확한 설명을 추가한 것을 보실 수 있습니다.
+
+---
+
+원문
+On the outputs, we are wanting the known outages, suggested next steps, a telephone script, suggested online guides, the less known support ticket, and also the financial status of the client.
+
+번역
+출력값으로는 현재 알려진 장애, 권장되는 다음 단계, 전화 스크립트, 온라인 가이드 제안, 기존 지원 티켓 정보, 그리고 고객의 재무 상태가 포함됩니다.
+
+---
+
+원문
+For the system prompt, I have told the agent how it is to behave.
+
+번역
+시스템 프롬프트에서는 에이전트가 어떤 방식으로 동작해야 하는지 지시했습니다.
+
+---
+
+원문
+And on the user prompt, I have guided the AI agent onto the goals I wish it to perform.
+
+번역
+사용자 프롬프트에서는 에이전트가 달성해야 할 목표를 안내했습니다.
+
+---
+
+원문
+You can see I've given it several actions to take and these are collecting the 360 information from the different backend systems.
+
+번역
+여기서 보시는 것처럼 여러 동작이 지정돼 있으며, 이는 다양한 백엔드 시스템에서 고객 360 정보를 수집하는 역할을 합니다.
+
+---
+
+원문
+And notice I am injecting the input data using the curly brackets on the input arguments I created earlier.
+
+번역
+또한 앞서 생성한 입력 인수를 중괄호 형식으로 삽입해 데이터를 주입하는 방식임을 확인할 수 있습니다.
+
+---
+
+원문
+So now we'll take a look at the tools the agent has access to.
+
+번역
+이제 에이전트가 접근할 수 있는 도구들을 살펴보겠습니다.
+
+---
+
+원문
+We have a Salesforce CRM lookup to get the basic customer information. A Tivoli netcool lookup to find any outages in the area. The financials are brought back from SAP.
+
+번역
+Salesforce CRM 조회를 통해 기본 고객 정보를 가져오고, Tivoli Netcool 조회로 해당 지역의 장애 여부를 확인합니다. 재무 데이터는 SAP에서 가져옵니다.
+
+---
+
+원문
+We interrogate a library for matching documents and also we get the latest support tickets from service.
+
+번역
+또한 라이브러리에서 관련 문서를 검색하고, 서비스 시스템에서 최신 지원 티켓을 가져옵니다.
+
+---
+
+원문
+Now we will run a test. Now the data would normally come from a telefan system. However, we are manually inputting it here for our test run.
+
+번역
+이제 테스트를 실행해 보겠습니다. 원래 데이터는 텔레팬 시스템에서 들어오지만, 이번에는 테스트를 위해 수동으로 입력합니다.
+
+---
+
+원문
+So we will now execute the agent.
+
+번역
+그럼 에이전트를 실행하겠습니다.
+
+---
+
+원문
+The agent as it tries to achieve the goals I've set it will decide which tools to run and in which order.
+
+번역
+에이전트는 제가 설정한 목표를 달성하기 위해 어떤 도구를 어떤 순서로 실행할지 스스로 결정합니다.
+
+---
+
+원문
+And you can see here that they're being executed.
+
+번역
+여기 보시는 것처럼 도구들이 실제로 실행되고 있습니다.
+
+---
+
+원문
+But data is then used by the agent in order to perform its goal achievements.
+
+번역
+에이전트는 이렇게 가져온 데이터를 활용해 목표를 달성합니다.
+
+---
+
+원문
+So let us take a look at the execution of the tool set.
+
+번역
+그럼 도구 실행 결과를 자세히 보겠습니다.
+
+---
+
+원문
+Here we can see for Salesforce we've passed in a customer ID and the RPA tool has returned a JSON of the customer details from Salesforce.
+
+번역
+Salesforce에서는 고객 ID를 전달했고, RPA 도구가 Salesforce에서 고객 세부 정보를 JSON 형식으로 반환했습니다.
+
+---
+
+원문
+The agent was able to then take the known address of the client and use that in the Tivoli call out. Notice that the input to Tivoli is the address or the city.
+
+번역
+그 다음, 에이전트는 고객의 주소를 활용해 Tivoli를 호출했습니다. Tivoli의 입력값은 주소나 도시 정보임을 확인할 수 있습니다.
+
+---
+
+원문
+In this example, there were no known outages in that area.
+
+번역
+이번 예시에서는 해당 지역에서 알려진 장애가 없었습니다.
+
+---
+
+원문
+While the agent was able to understand JSON from the different systems, we can see here the output of known outages, suggested next steps, the telephone script, suggested online guides.
+
+번역
+에이전트는 서로 다른 시스템에서 반환된 JSON을 해석해, 알려진 장애, 권장 다음 단계, 전화 스크립트, 제안된 온라인 가이드 등을 출력했습니다.
+
+---
+
+원문
+It is all written in easy-to-read plain English.
+
+번역
+모든 결과는 읽기 쉬운 평이한 영어로 작성돼 있습니다.
+
+---
+
+원문
+So this easy-to-read 360 view of our customer can be passed back to our operator for easy reading on their portal.
+
+번역
+따라서 이렇게 구성된 읽기 쉬운 고객 360 뷰는 상담원이 포털에서 쉽게 확인할 수 있도록 전달됩니다.
+
+---
